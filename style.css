@@ -229,12 +229,13 @@ gap: 1rem;
 ----------------------
 */
 .projects{
+  font-size:0.9rem;
   display: grid;
-  grid-template-rows: auto 1fr 1fr; 
+  grid-template-rows: auto 1fr 1fr;
   grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
   grid-auto-rows: 1fr;
   gap: 2rem 1rem;
-  font-size:0.9rem;
+    
 }
 
 .projects h1{
@@ -373,3 +374,52 @@ gap: 1rem;
     Qureis Media
 ==========================
 */
+
+@media (max-width:1200px) {
+  body{
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+  }
+  .header{
+    grid-area: initial;
+  }
+  .search-bar{
+    flex-direction: column;
+    align-content: center;
+    justify-content: center;
+    text-align: center;
+    padding-left: 0;
+    border-bottom: 2px solid var(--color-background-sidebar);
+  }
+  .search{
+    justify-content: center;
+  }
+  .small-info{
+    justify-content: center;
+    padding-right: 0;
+  }
+  .search input{
+    width: 15rem;
+  }
+  .info-profile{
+    margin-top: 20px;
+    flex-direction: column;
+    align-content: center;
+    justify-content: center;
+  }
+  .contianer-buttons{
+    margin-top: 20px;
+    justify-content: center;
+  }
+  .sidebar{
+      width: 100vw;
+    grid-area: initial;
+
+  }
+  .main{
+    grid-area: initial;
+    display: flex;
+    flex-direction: column;
+  }
+}
