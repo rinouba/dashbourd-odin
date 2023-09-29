@@ -8,10 +8,14 @@
       rel="stylesheet"
       href="https://cdn.jsdelivr.net/npm/@mdi/font@7.2.96/css/materialdesignicons.min.css"
     />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <script defer src="index.js"></script>
     <title>dashbouard</title>
   </head>
   <body>
+
     <!-- header -->
+
     <header class="header">
       <!-- search bar + small info -->
       <div class="search-bar">
@@ -26,7 +30,9 @@
           <img src="images/licensed-image.jpg" alt="Dog" />
           <span>Morgan Oakley</span>
         </div>
-
+        <a href="javascript:void(0);" class="icon" onclick="myFunction()">
+          <i class="fa fa-bars"></i>
+        </a>
       </div>
       <!-- info profile + three buttons right -->
       <div class="info-profile">
@@ -47,6 +53,7 @@
     </header>
 
     <!-- side bar -->
+
     <section class="sidebar">
       <!--
           =====================
@@ -99,12 +106,13 @@
         </li>
       </ul>
     </section>
+
     <!-- main -->
 
     <main class="main">
 
       <div class="projects">
-        <h1>You Projects</h1>
+        <h1>Trips</h1>
           <div class="card-projects">
             <h2>Super Cool BRO</h2>
             <h6>
@@ -257,5 +265,6 @@
       </div>  
 
     </main>
+
   </body>
 </html>
