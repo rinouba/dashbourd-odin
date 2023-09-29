@@ -370,7 +370,7 @@ List 1
 */
 
 .icon {
-  display: block;
+  display: none;
   position: absolute;
   right: 0;
   top: 0;
@@ -383,6 +383,9 @@ List 1
     display: flex;
     flex-direction: column;
     align-items: center;
+  }
+  .icon{
+    display: block;
   }
   .header {
     grid-area: initial;
@@ -427,5 +430,10 @@ List 1
     display: flex;
     flex-direction: column;
     order: 3;
+  }
+}
+@media (min-width:1200px) {
+  .sidebar{
+    display: grid !important;
   }
 }
