@@ -384,7 +384,7 @@ List 1
     flex-direction: column;
     align-items: center;
   }
-  .icon{
+  .icon {
     display: block;
   }
   .header {
@@ -431,9 +431,18 @@ List 1
     flex-direction: column;
     order: 3;
   }
+  .trends {
+    justify-content: center;
+  }
+  .trends > img {
+    margin-right: 2rem;
+  }
 }
-@media (min-width:1200px) {
-  .sidebar{
+@media (min-width: 1200px) {
+  .sidebar {
     display: grid !important;
+  }
+  .trends {
+    justify-content: space-around;
   }
 }
